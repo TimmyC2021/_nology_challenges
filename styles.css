@@ -1,3 +1,5 @@
+/* Global settings */
+
 * {
     padding: 0;
     margin: 0;
@@ -5,16 +7,47 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.work_in_progress {
+    color: orange;
+    
+}
+
+/* Navbar settings (navbar currently disabled)
+nav {
+    margin: 30px;
+    height: 50px;
+    border: 1px solid black;
+}
+nav > ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav > ul > li {
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: tomato;
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+}
+*/
+
+/* Header section settings */
+
 h1 {
     margin: 30px;
     text-align: center;
 }
 
+/* Settings for controlling the table */
+
+/* Enable flex for each row and centre across the page */
 .row {
     display: flex;
     justify-content: center;
 }
-
+/* Settings for each cell in the row */
 .row > div {
     width: 300px;
     min-height: 30px;
@@ -24,4 +57,22 @@ h1 {
     padding-top: 10px;
     display: table-cell;
     vertical-align: middle;
+}
+
+/* Change the border color when hovering over a cell */
+.row > div:hover {
+    border: solid 1px yellow;
+}
+
+/* Keep the image contained within the table */
+.row > div > img {
+    max-width: 300px;
+}
+
+/* Footer settings */
+
+footer {
+    text-align: right;
+    margin-top: 50px;
+    margin-right: 50px;
 }
