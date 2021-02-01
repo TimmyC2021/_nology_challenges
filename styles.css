@@ -50,6 +50,12 @@ h1 {
 /* Settings for the first header row of the table */
 #header_row {
   font-weight: bold;
+  position: sticky;
+  top: 0px;
+}
+
+#header_row > div {
+  background-color: rgb(26, 136, 209);
 }
 
 /* Settings for each cell in the row */
